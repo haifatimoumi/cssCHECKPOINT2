@@ -1,63 +1,99 @@
 /* style.css */
 
+/* 1. POLICE ET FOND GLOBAL */
 body {
   font-family: 'Poppins', sans-serif;
   padding-top: 80px; 
-  background-color: #fcf8f9; /* Un rose très pâle pour la douceur */
+  background-color: #fcf8f9; /* Rose très pâle pour la douceur */
   color: #4a4a4a;
 }
 
-/* Navbar élégante */
+/* 2. NAVBAR (BLANCHE ET CHIC) */
 .navbar {
-  background-color: #ffffff !important; /* Fond blanc pour faire ressortir le logo */
+  background-color: #ffffff ; 
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 10px 0;
 }
 
 .navbar-brand {
-  color: #d4a5b2 !important; /* Vieux rose plus chic que le rose vif */
+  color: #d4a5b2 !important; /* Vieux rose qui rappelle tes images */
   font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .nav-link {
   color: #666 !important;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
-/* Logo ajusté */
+.nav-link:hover {
+  color: #d4a5b2 !important;
+}
+
+/* 3. LOGO (CORRIGÉ) */
 .logo {
-  width: 60px; /* Taille plus équilibrée */
+  width: 60px; 
   height: 60px;
   border-radius: 50%;
   border: 2px solid #d4a5b2;
   object-fit: cover;
+  margin-right: 15px;
 }
 
-/* Section Hero avec ton image fond.jpg */
+/* 4. HERO SECTION (UTILISE TA PHOTO FOND.JPG) */
 .hero {
-  /* On ajoute un voile sombre léger (0.4) pour faire ressortir le texte blanc */
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+  /* On ajoute un voile léger pour que le texte soit bien lisible */
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
               url("fond.jpg") center/cover no-repeat;
   padding: 120px 0;
+  color: white !important;
 }
 
-/* Boutons plus modernes */
+.hero h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* 5. CARTES PRODUITS */
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Petit effet de mouvement au survol */
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* 6. BOUTONS ROSE DOUX */
 .btn-pink {
-  background-color: #d4a5b2; /* Accordé au logo */
+  background-color: #d4a5b2;
   color: white;
   border-radius: 30px;
   padding: 10px 25px;
   border: none;
+  font-weight: 500;
 }
 
 .btn-pink:hover {
   background-color: #c28e9d;
   color: white;
+  box-shadow: 0 5px 15px rgba(212, 165, 178, 0.4);
 }
 
-/* Footer */
+/* 7. FOOTER */
 footer {
   background-color: #d4a5b2;
   color: white;
-}
-.card-img-top{
-     height: 220px;
+  padding: 30px 0;
+  margin-top: 50px;
 }
